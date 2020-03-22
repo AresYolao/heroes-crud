@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HeroeModel } from 'src/app/models/heroe.model';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-heroe',
@@ -16,7 +17,7 @@ export class HeroeComponent implements OnInit {
   ngOnInit() {
   }
 
-  guardar(form: Ngform){
+  guardar(form: NgForm){
 
     if(form.invalid){
       console.log('Formulario no valido');
